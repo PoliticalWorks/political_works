@@ -15,10 +15,10 @@ export class BannerComponent implements OnInit, OnDestroy {
    this.interval =  setInterval(()=>{
       if(count == 1){
         count=2
-        banner!.style.backgroundImage = `url('../../../assets/images/banner-${count}.png')`
+        banner!.style.backgroundImage = `url('./assets/images/banner-${count}.png')`
       } else{
         count=1
-        banner!.style.backgroundImage = `url('../../../assets/images/banner-${count}.png')`
+        banner!.style.backgroundImage = `url('./assets/images/banner-${count}.png')`
       }
     },5000)
   }
