@@ -1,0 +1,62 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+// gilroy
+
+@font-face {
+    font-family: 'gl-r';
+    src: url('./assets/fonts/Gilroy-Regular.ttf');
+  }
+@font-face {
+    font-family: 'gl-m';
+    src: url('./assets/fonts/Gilroy-Medium.ttf');
+  }
+@font-face {
+    font-family: 'gl-sb';
+    src: url('./assets/fonts/Gilroy-SemiBold.ttf');
+  }
+@font-face {
+    font-family: 'gl-b';
+    src: url('./assets/fonts/Gilroy-Bold.ttf');
+  }
+
+// clash display
+
+@font-face {
+    font-family: 'cd-r';
+    src: url('./assets/fonts/clashdisplay/ClashDisplay-Regular.otf');
+  }
+@font-face {
+    font-family: 'cd-m';
+    src: url('./assets/fonts/clashdisplay/ClashDisplay-Medium.otf');
+  }
+  
+@font-face {
+    font-family: 'cd-sb';
+    src: url('./assets/fonts/clashdisplay/ClashDisplay-Semibold.otf');
+  }
+@font-face {
+    font-family: 'cd-b';
+    src: url('./assets/fonts/clashdisplay/ClashDisplay-Bold.otf');
+  }
+  *{
+    font-family: gl-r;
+  }
+
+  image{
+    object-fit: contain;
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

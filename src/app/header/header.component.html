@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-sm navbar-light header-container">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img class="header-logo" src="../assets/images/header.png" alt="header">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse mobile-nav" id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+        <li class="nav-item p-r-80">
+          <a class="nav-link" href="#home" fragment="home"
+            [ngClass]="activeRoute === 'home' ? 'active-link': 'nav-link'" (click)="activeRoute='home'">Home</a>
+        </li>
+        <li class="nav-item p-r-80" routerLink fragment="services">
+          <a class="nav-link" href="#services" [ngClass]="activeRoute === 'services' ? 'active-link': 'nav-link'" (click)="activeRoute='services'">Services</a>
+        </li>
+        <li class="nav-item p-r-80" routerLink fragment="about-us">
+          <a class="nav-link" href="#about-us" [ngClass]="activeRoute === 'about-us' ? 'active-link': 'nav-link'" (click)="activeRoute='about-us'">About Us</a>
+        </li>
+        <li class="nav-item p-r-80" routerLink fragment="political-works">
+          <a class="nav-link" href="#political-works" [ngClass]="activeRoute === 'political-works' ? 'active-link': 'nav-link'" (click)="activeRoute='political-works'">Political Works</a>
+        </li>
+        <li class="nav-item" routerLink fragment="team">
+          <a class="nav-link" href="#team" [ngClass]="activeRoute === 'team' ? 'active-link': 'nav-link'" (click)="activeRoute='team'">Team</a>
+        </li>
+      </ul>
+      <div class="d-flex align-items-center call-container  mobile-end">
+        <img src="../assets/images/call.svg" alt="call">
+        <p class="m-0 p-0">+91 86678 64589</p>
+      </div>
+    </div>
+  </div>
+</nav>

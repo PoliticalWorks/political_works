@@ -1,0 +1,52 @@
+footer{
+    padding: 27px 250px;
+    margin: 50px 0 0;
+    background-color:  #ebf3ff;
+    h6{
+        font-size: 20px;
+        font-weight: 500;
+        color: #1e5abe;
+        font-family: gl-m;
+    }
+    .footer-icons{
+        a{
+            margin-right: 20px;
+            &:last-child{
+                margin-right: 0;
+            }
+
+            img{
+                width: 46px;
+                height: 46px;
+                transition: transform .4s;
+                &:hover{
+                    transform: rotate(360deg);
+                }
+               
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1280px){
+footer{
+    padding: 80px;
+}
+}
+@media screen and (max-width:780px){
+footer{
+    padding: 10px;
+    margin: 0;
+    h6{
+        font-size: 14px;
+    }
+    .footer-icons{
+        a{
+            img{
+                width: 26px;
+                height: 26px;
+            }
+        }
+    }
+}
+}

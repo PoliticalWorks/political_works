@@ -1,0 +1,131 @@
+<app-header></app-header>
+<app-banner id="home"></app-banner>
+<!-- first row -->
+<section class="pw-section" id="services">
+  <div class="text-center">
+    <span class="section-header-text d-flex align-items-center justify-content-center m-auto">
+      <h4>Services</h4>
+    </span>
+    <h2 class="section-heading">Plan - Execute - <span>win</span></h2>
+    <p class="section-text section-one-text text-center">We are committed to outreach your political work! Our services
+      cater to all the needs of the
+      political world. We
+      deliver a feasible solution to inspire society and create a political baseline that helps you win. Let's brand
+      your
+      work!</p>
+  </div>
+
+  <div class="container-fluid pw-card-container">
+    <div class="row g-5">
+      <ng-container *ngFor="let item of services">
+        <div class="col-xl-4 col-sm-12 col-lg-6">
+          <app-card [header]="item.title" [text]="item.text"></app-card>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+
+</section>
+
+<!-- second row -->
+<section class="bg-blue d-flex align-items-center justify-content-between flex-lg-row flex-column" id="about-us">
+  <div class="me-4 width-70">
+    <span class="section-header-text d-flex align-items-center justify-content-center">
+      <h4>About Us</h4>
+    </span>
+    <h2 class="section-heading">we do things <span>differently...</span></h2>
+    <p class="section-text">
+      A one-stop solution for all your political needs. We provide branding, data analytics & social media management
+      for your online presence. Our team employs various tools, techniques & strategies to make your public identity
+      shine.
+    </p>
+  </div>
+  <img class="section-two-img" src="../assets/images/vector-1.png" alt="about us">
+
+</section>
+
+<!-- section three -->
+<section class="pw-section" id="political-works">
+  <div class="text-center">
+    <span class="section-header-text d-flex align-items-center justify-content-center m-auto pw-bg">
+      <h4>Political Works</h4>
+    </span>
+    <h2 class="section-heading">An ideal hub for <span>emerging leaders</span></h2>
+    <p class="section-text section-one-text text-center">We are committed to outreach your political work! Our services
+      cater to all the needs of the
+      We're desired to support political parties & bring about real changes. We provide a range of services with vast
+      experience in political chores. Our work is to provide complete solutions that satisfy the unique needs of each
+      client we serve.</p>
+  </div>
+
+  <div class="container-fluid tilt-card-container ">
+    <div class="row g-5">
+      <ng-container *ngFor="let item of politicalWorks">
+        <div class="col-lg-3 col-12">
+          <div class=" tilt-card p-4" [ngStyle]="{'background-color':item.bg}">
+            <h1>{{item.count}}</h1>
+            <h5>{{item.name}}</h5>
+            <h6>{{item.party}}</h6>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</section>
+
+<!-- fpurth row -->
+<section class="bg-blue d-flex align-items-center justify-content-between flex-lg-row flex-column-reverse" id="team">
+  <img class="section-two-img" src="../assets/images/vector-2.png" alt="team">
+
+  <div class="ms-4 width-70">
+    <span class="section-header-text d-flex align-items-center justify-content-center">
+      <h4>Team</h4>
+    </span>
+    <h2 class="section-heading">Experts in <span>Strategy</span></h2>
+    <p class="section-text">
+      We're passionate about making a meaningful impact on the democratic process. Inclusion, teamwork, excellence, and
+      opportunity are the cornerstones of our work. Our welcoming culture provides a positive and rewarding experience.
+      Join us!
+    </p>
+  </div>
+</section>
+
+
+<!-- section four -->
+<section class="pw-section" id="contact-us">
+  <div class="text-center">
+    <span class="section-header-text d-flex align-items-center justify-content-center m-auto ">
+      <h4>Hire Us</h4>
+    </span>
+    <h2 class="section-heading">Our team is always willing to <span>help you</span></h2>
+    <p class="section-text section-one-text text-center">We are committed to outreach your political work! Our services
+      Trying to manage your digital presence? Get on track with us. Our experienced talents will deliver better results
+      than your expectations. Contact us for marketing, advertising, and analytic report needs. We would love to work
+      with you!</p>
+  </div>
+
+  <form action="https://formspree.io/f/mzblgggk" method="post" accept-charset="utf-8">
+    <div class="container">
+      <div class="row g-4 pb-4">
+        <div class="col-lg-6 col-12">
+          <input type="text" placeholder="Name" name="name">
+        </div>
+        <div class="col-lg-6 col-12">
+          <input type="email" placeholder="Business Email" name="email">
+        </div>
+        <div class="col-lg-6 col-12">
+          <input type="number" placeholder="Mobile Number" name="mobile">
+        </div>
+        <div class="col-lg-6 col-12">
+          <input type="text" placeholder="Address" name="address">
+        </div>
+      </div>
+      <div class="justify-content-center align-items-center d-flex">
+        <button class="submit-button" type="submit">Submit</button>
+      </div>
+    </div>
+  </form>
+  </section>
+
+
+  <app-footer></app-footer>

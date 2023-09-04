@@ -1,0 +1,56 @@
+.banner-container {
+    background-image: url('../../../assets/images/banner-1.png');
+    background-size: cover;
+    height: 89vh;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all 1s ease;
+
+    .banner-content {
+        padding-top: 6.63em;
+        margin: 0 auto;
+
+        h1 {
+            font-size: 4.9vw;
+            font-family: cd-b;
+            color:#1e5abe;
+            text-align: center;
+            
+            span {
+                font-family: cd-sb;
+                color: #323947;
+            }
+        }
+
+        p {
+            font-family: gl-sb;
+            font-size: 1.38rem;
+            font-weight: 600;
+            color: #323947;
+            margin-right: 60px;
+            text-align: right;
+        }
+    }
+}
+
+@keyframes fade-in {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:572px) {
+ .banner-container{
+    height: 300px;
+    .banner-content{
+        padding-top: 5%;
+        p{
+            font-size: 12px;
+            margin-right: 0;
+        }
+    }
+}
+}

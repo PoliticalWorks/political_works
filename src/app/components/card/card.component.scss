@@ -1,0 +1,55 @@
+.pw-card{
+    border: solid 2px #323947;
+  background-color: #fff;
+  height: 365px;
+  transition: box-shadow .2s;
+  &:hover{
+    box-shadow: 6px 5px #000;
+  }
+  .pw-card-header{
+      padding: 30px;
+    font-family: gl-b;
+    font-size: 24px;
+    color: #323947;
+    border-bottom: solid 2px #323947;
+    text-transform: capitalize;
+  }
+  .pw-card-content{
+    padding: 30px;
+    p{
+        font-family: gl-m;
+        font-size: 20px;
+        color: #8b919a;
+    }
+  }
+}
+
+@media screen and (max-width:1460px) {
+  .pw-card{
+    .pw-card-content{
+        padding: 15px;
+
+        p{
+          font-size: 18px;
+        }
+      }
+  }
+}
+
+@media screen and (max-width:780px){
+  .pw-card {
+    height: auto;
+    .pw-card-header{
+      font-size: 16px;
+      padding: 10px;
+    }
+    .pw-card-content{
+      padding: 10px;
+      p{
+
+        font-size: 14px;
+      } 
+    }
+
+  }
+}
