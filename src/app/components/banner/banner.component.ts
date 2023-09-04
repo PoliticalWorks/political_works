@@ -12,7 +12,8 @@ export class BannerComponent implements OnInit, OnDestroy {
     let banner= document.getElementById('banner')
     console.log(banner, 'nnnn');
     let count=1
-   this.interval =  setInterval(()=>{
+    banner!.style.backgroundImage = `url('./assets/images/banner-${count}.png')`
+    this.interval =  setInterval(()=>{
       if(count == 1){
         count=2
         banner!.style.backgroundImage = `url('./assets/images/banner-${count}.png')`
