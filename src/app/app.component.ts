@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
+import AOS from 'aos'; //AOS - 1
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   services = [
     {
       title: 'campaign strategy',
@@ -14,7 +15,7 @@ export class AppComponent {
     },
     {
       title: 'digital strategy',
-      text: "We create and maintain the website and social media accounts by engaging people with the right message which includes sharing content, answering queries, and rallying support. Our strategy is doing what not to do!"
+      text: "We create and maintain the website and social media accounts by engaging people with the right message which includes sharing content, answering queries, and rallying support. Leading digitally, governing effectively!"
     },
     {
       title: 'Advertisement',
@@ -30,7 +31,7 @@ export class AppComponent {
     },
     {
       title: 'Crisis management',
-      text: "Our team will offer timely support and advice to help minimize the effects of any online crises or difficulties. We use proactive techniques to reduce the spread of fraud and safeguard your reputation."
+      text: "Our team will offer timely support and advice to help minimize the effects of any online crises or difficulties. We use proactive techniques to reduce the spread of fraud and safeguard your reputation. Finding solutions in every storm."
     },
   ];
 
@@ -43,7 +44,7 @@ export class AppComponent {
     },
     {
       count:"04",
-      name:'District Secratary',
+      name:'District Secretary',
       party:'DMK party',
       bg:'#c04de2'
     },
@@ -70,5 +71,10 @@ metaTagService.addTags([
   { name: 'date', content: '2023-09-03', scheme: 'YYYY-MM-DD' },
   { charset: 'UTF-8' }
 ]);
+  }
+
+  ngOnInit(){
+    AOS.init({disable: 'mobile'});//AOS - 2
+    AOS.refresh();//refresh method is called on window resize and so on, as it doesn't require to build new store with AOS elements and should be as light as possible.
   }
 }

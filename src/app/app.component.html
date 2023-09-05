@@ -1,9 +1,10 @@
 <app-header></app-header>
 <app-banner id="home"></app-banner>
 <!-- first row -->
-<section class="pw-section" id="services">
+<section class="pw-section" id="services" data-aos="fade-up" data-aos-delay="300">
   <div class="text-center">
-    <span class="section-header-text d-flex align-items-center justify-content-center m-auto" style="background-image: url('./assets/images/section-header-bg.svg');">
+    <span class="section-header-text d-flex align-items-center justify-content-center m-auto"
+      style="background-image: url('./assets/images/section-header-bg.svg');">
       <h4>Services</h4>
     </span>
     <h2 class="section-heading">Plan - Execute - <span>win</span></h2>
@@ -17,8 +18,8 @@
 
   <div class="container-fluid pw-card-container">
     <div class="row g-5">
-      <ng-container *ngFor="let item of services">
-        <div class="col-xl-4 col-sm-12 col-lg-6">
+      <ng-container *ngFor="let item of services; let i = index">
+        <div class="col-xl-4 col-sm-12 col-lg-6" data-aos="fade-up" data-aos-delay="200">
           <app-card [header]="item.title" [text]="item.text"></app-card>
         </div>
       </ng-container>
@@ -28,9 +29,11 @@
 </section>
 
 <!-- second row -->
-<section class="bg-blue d-flex align-items-center justify-content-between flex-lg-row flex-column" id="about-us">
-  <div class="me-4 width-70">
-    <span class="section-header-text d-flex align-items-center justify-content-center" style="background-image: url('./assets/images/section-header-bg.svg');">
+<section class="bg-blue d-flex align-items-center justify-content-between flex-lg-row flex-column" id="about-us"
+  data-aos="zoom-out" data-aos-delay="300" data-aos-anchor="#about-us" data-aos-anchor-placement="center-bottom">
+  <div class="me-4 me-sm-0 width-70">
+    <span class="section-header-text d-flex align-items-center justify-content-center"
+      style="background-image: url('./assets/images/section-header-bg.svg');">
       <h4>About Us</h4>
     </span>
     <h2 class="section-heading">we do things <span>differently...</span></h2>
@@ -40,14 +43,15 @@
       shine.
     </p>
   </div>
-  <img class="section-two-img" src="./assets/images/vector-1.png" alt="about us">
+  <img data-aos="zoom-in" data-aos-delay="500" class="section-two-img" src="./assets/images/vector-1.png" alt="about us">
 
 </section>
 
 <!-- section three -->
-<section class="pw-section" id="political-works">
+<section class="pw-section" id="political-works" data-aos="fade-down" data-aos-delay="300" data-aos-anchor="#political-works" data-aos-anchor-placement="center-bottom">
   <div class="text-center">
-    <span class="section-header-text d-flex align-items-center justify-content-center m-auto pw-bg" style="background-image: url('./assets/images/section-header-bg.svg');">
+    <span class="section-header-text d-flex align-items-center justify-content-center m-auto pw-bg"
+      style="background-image: url('./assets/images/section-header-bg.svg');">
       <h4>Political Works</h4>
     </span>
     <h2 class="section-heading">An ideal hub for <span>emerging leaders</span></h2>
@@ -58,11 +62,11 @@
       client we serve.</p>
   </div>
 
-  <div class="container-fluid tilt-card-container ">
+  <div class="container-fluid tilt-card-container">
     <div class="row g-5">
-      <ng-container *ngFor="let item of politicalWorks">
+      <ng-container *ngFor="let item of politicalWorks;let i = index">
         <div class="col-lg-3 col-12">
-          <div class=" tilt-card p-4" [ngStyle]="{'background-color':item.bg}">
+          <div class=" tilt-card p-4" [ngStyle]="{'background-color': item.bg}">
             <h1>{{item.count}}</h1>
             <h5>{{item.name}}</h5>
             <h6>{{item.party}}</h6>
@@ -74,11 +78,13 @@
 </section>
 
 <!-- fpurth row -->
-<section class="bg-blue d-flex align-items-center justify-content-between flex-lg-row flex-column-reverse" id="team">
-  <img class="section-two-img" src="./assets/images/vector-2.png" alt="team">
+<section class="bg-blue d-flex align-items-center justify-content-between flex-lg-row flex-column-reverse" id="team"
+  data-aos="fade-up" data-aos-delay="300" data-aos-anchor="#team" data-aos-anchor-placement="center-bottom">
+  <img data-aos="zoom-in" data-aos-delay="500"  class="section-two-img" src="./assets/images/vector-2.png" alt="team">
 
   <div class="ms-4 width-70">
-    <span class="section-header-text d-flex align-items-center justify-content-center" style="background-image: url('./assets/images/section-header-bg.svg');">
+    <span class="section-header-text d-flex align-items-center justify-content-center"
+      style="background-image: url('./assets/images/section-header-bg.svg');">
       <h4>Team</h4>
     </span>
     <h2 class="section-heading">Experts in <span>Strategy</span></h2>
@@ -92,9 +98,11 @@
 
 
 <!-- section four -->
-<section class="pw-section" id="contact-us">
+<section class="pw-section" id="contact-us" data-aos="fade-down" data-aos-delay="300" data-aos-anchor="#contact-us"
+  data-aos-anchor-placement="center-bottom">
   <div class="text-center">
-    <span class="section-header-text d-flex align-items-center justify-content-center m-auto " style="background-image: url('./assets/images/section-header-bg.svg');">
+    <span class="section-header-text d-flex align-items-center justify-content-center m-auto "
+      style="background-image: url('./assets/images/section-header-bg.svg');">
       <h4>Hire Us</h4>
     </span>
     <h2 class="section-heading">Our team is always willing to <span>help you</span></h2>
@@ -106,7 +114,7 @@
 
   <form action="https://formspree.io/f/mzblgggk" method="post" accept-charset="utf-8">
     <div class="container">
-      <div class="row g-4 pb-4">
+      <div class="row pb-4  g-lg-4 g-2">
         <div class="col-lg-6 col-12">
           <input type="text" placeholder="Name" name="name">
         </div>
@@ -125,7 +133,7 @@
       </div>
     </div>
   </form>
-  </section>
+</section>
 
 
-  <app-footer></app-footer>
+<app-footer></app-footer>

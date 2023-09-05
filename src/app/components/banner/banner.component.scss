@@ -41,11 +41,21 @@
     }
 }
 
+@media screen and (max-height:798px) {
+    .banner-container{
+        height: 687px;
+        background-size: 100%;
+    }
+}
 @media screen and (max-width:572px) {
  .banner-container{
-    height: 300px;
+    height: 184px;
+    background-size: 100%;
     .banner-content{
-        padding-top: 5%;
+        padding-top: 0;
+        h1{
+            font-size: 6vw;
+        }
         p{
             font-size: 12px;
             margin-right: 0;

@@ -15,8 +15,8 @@
 }
 
 .header-logo {
-    width: 185px;
-    height: 77px;
+    width: 133px;
+    height:50px;
     object-fit: contain;
 
 }
@@ -43,6 +43,9 @@
             background-color: #1e5abe;
             left: 0;
             bottom: -35px;
+            @media screen and (max-width:700px) {
+                display:none
+            }
         }
     }
 }
@@ -158,5 +161,8 @@
 @media screen and (max-width:700px) {
 .mobile-end{
     justify-content: end;
+}
+.header-logo{
+    width: 85px;
 }
 }
